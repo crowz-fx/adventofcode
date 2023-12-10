@@ -1,22 +1,6 @@
 """
 # Author: Lui Crowie
 # Task: https://adventofcode.com/2023/day/1
-
-Snippet of task:
-  On each line, the calibration value can be found by combining the 
-    first digit and the last digit (in that order) to form a single 
-    two-digit number.
-
-  For example:
-    1abc2
-    pqr3stu8vwx
-    a1b2c3d4e5f
-    treb7uchet
-
-  In this example, the calibration values of these four lines are 12, 38, 15, and 77. 
-  Adding these together produces 142.
-  Consider your entire calibration document. 
-  What is the sum of all of the calibration values?
 """
 
 # Get input from file
@@ -24,9 +8,7 @@ with open("2023/day1/input.txt", "r") as file:
   calibration_document = file.readlines()
 
 """
--------------------------------------------------------------------------------------
 Part 1
--------------------------------------------------------------------------------------
 """
 calibration_sum = 0
 
@@ -55,11 +37,8 @@ for calibration_line in calibration_document:
 print(f"Part 1 - Final count: {calibration_sum}") # 54630
 
 """
--------------------------------------------------------------------------------------
-Part 2
-   Same as part one but we need to convert words to numbers like one ==> 1, then
-     do process to check first and last number
--------------------------------------------------------------------------------------
+Part 2 - Same as part one but we need to convert words to numbers like one ==> 1, then
+  do process to check first and last number
 """
 additional_calibration_sum = 0
 

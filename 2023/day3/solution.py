@@ -1,41 +1,13 @@
 """
 # Author: Lui Crowie
 # Task: https://adventofcode.com/2023/day/3
-
-Snippet of task:
-  The engine schematic (your puzzle input) consists of a visual representation of the engine. 
-    There are lots of numbers and symbols you don't really understand, but apparently any 
-    number adjacent to a symbol, even diagonally, is a "part number" and should be included 
-    in your sum. (Periods (.) do not count as a symbol.)
-
-  Here is an example engine schematic:
-    467..114..
-    ...*......
-    ..35..633.
-    ......#...
-    617*......
-    .....+.58.
-    ..592.....
-    ......755.
-    ...$.*....
-    .664.598..
-
-  In this schematic, two numbers are not part numbers because they are not adjacent to a 
-    symbol: 114 (top right) and 58 (middle right). Every other number is adjacent to a symbol 
-    and so is a part number; their sum is 4361.
-
-  Of course, the actual engine schematic is much larger. What is the sum of all of the part 
-    numbers in the engine schematic?
 """
-
 # Get input from file
 with open("2023/day3/input.txt", "r") as file:
   schematic_lines = file.readlines()
 
 """
--------------------------------------------------------------------------------------
 Part 1
--------------------------------------------------------------------------------------
 """
 part_number_sumation = 0
 
@@ -58,10 +30,10 @@ for line in schematic_lines:
 print(f"Symbols - {symbols}")
 
 """
- Process explained - Go through each line, when you get to a number, capture the co-ords of 
-   the number startx, starty like 0,2 till endx, endy like 0,5 then check for symbols in a 
-   rectangle with a height and width of one char larger so 0,1 1,1 1,2 1,3 1,4 1,5 1,6 and 0,6
-   if symbol then add, if not move on to next number
+  Process explained - Go through each line, when you get to a number, capture the co-ords of 
+    the number startx, starty like 0,2 till endx, endy like 0,5 then check for symbols in a 
+    rectangle with a height and width of one char larger so 0,1 1,1 1,2 1,3 1,4 1,5 1,6 and 0,6
+    if symbol then add, if not move on to next number
 """
 
 for line_index, line in enumerate(schematic_lines):
