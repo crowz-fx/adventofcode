@@ -17,7 +17,7 @@ def solution(file_contents=[]):
 if __name__ == '__main__': 
   UTL.run_solution(
     root_dir=ROOT_DIR,
-    test_count=1,
+    test_count=2,
     run_tests=True,
     run_input=False,
     solution=solution
