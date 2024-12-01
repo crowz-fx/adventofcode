@@ -1,12 +1,42 @@
 # Advent Of Code
+
 Lui's solutions to [adventofcode.com](https://adventofcode.com)
 
-## Key
-- ❌ = Not started, to do
-- 🚧 = In progress/to fix/to finish 
-- ✅ = Done & submitted
+## Dev
+
+### Create
+
+```bash
+./new.sh <year> <day>
+
+./new.sh 2024 1
+```
+
+### Run
+
+```bash
+python <year>/<day>/solution.py
+```
 
 ## Tracking
+
+### Key
+
+- ❌ = Not started, to do
+- 🚧 = In progress/to fix/to finish
+- ✅ = Done & submitted
+
+### Years
+
+<details>
+<summary>2024</summary>
+
+- Day 1
+  - Part 1 -
+  - Part 2 -
+
+</details>
+
 <details>
 <summary>2023</summary>
 
@@ -85,4 +115,4 @@ Lui's solutions to [adventofcode.com](https://adventofcode.com)
 - Day 25
   - Part 1 - ⏰
   - Part 2 - ⏰
-</details>
+  </details>
