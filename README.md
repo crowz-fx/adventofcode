@@ -32,8 +32,11 @@ python <year>/<day>/solution.py
 <summary>2024</summary>
 
 - Day 1
-  - Part 1 -
-  - Part 2 -
+  - Part 1 - ✅
+  - Part 2 - ✅
+- Day 2
+  - Part 1 - ✅
+  - Part 2 - 🚧
 
 </details>
 
